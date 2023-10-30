@@ -23,6 +23,17 @@ dependencies {
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:32.1.1-jre")
+
+    implementation("org.apache.commons:commons-lang3:3.13.0")
+
+    // lombok
+    compileOnly("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
+    
+    testCompileOnly("org.projectlombok:lombok:1.18.30")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.30")
+
+    testImplementation("org.assertj:assertj-core:3.24.2")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
